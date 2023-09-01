@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://be8i8govq8lbg"]
+
+[ext_resource type="Texture2D" uid="uid://dv3c878y32tkj" path="res://us_map_pixel.jpg" id="1_2v1rc"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UsMapPixel" type="Sprite2D" parent="."]
+position = Vector2(293, 221)
+texture = ExtResource("1_2v1rc")
+
+[node name="Wyoming" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Wyoming"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wyoming/Area2D"]
+polygon = PackedVector2Array(186, 70, 248, 70, 248, 116, 186, 116)
+
+[node name="Texas" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Texas"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Texas/Area2D"]
+polygon = PackedVector2Array(336, 199, 336, 236, 330, 243, 320, 243, 304, 260, 304, 282, 290, 268, 290, 260, 265, 235, 255, 236, 249, 243, 242, 237, 242, 228, 228, 214, 257, 214, 258, 166, 280, 167, 280, 199)
